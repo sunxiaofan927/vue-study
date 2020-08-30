@@ -4,12 +4,11 @@
  * @Author: Chengbotao
  * @Date: 2020-03-01 20:19:07
  * @LastEditors: Chengbotao
- * @LastEditTime: 2020-05-21 23:24:10
+ * @LastEditTime: 2020-08-30 18:16:23
 --> 
 <template>
   <div>
-    <button @click="isHas">点击</button>
-    <custom-input v-if="flag" :key="1" type="text" @focus.once="isFocus"></custom-input>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -26,12 +25,6 @@ export default {
     }
   },
   methods: {
-    isHas(){
-      this.flag = !this.flag
-    },
-    isFocus(){
-      console.log(2223)
-    }
   }
 }
 </script>
